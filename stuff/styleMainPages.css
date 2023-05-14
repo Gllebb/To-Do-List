@@ -1,0 +1,264 @@
+body{
+  background: #F5F5F5;
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav bar */
+nav{
+  background: #5B5B5B;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+}
+
+/* logo */
+.no-style {
+  text-decoration: none;
+  color: #F5F5F5;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .nav-items{
+  margin-left: auto;
+  display: flex;
+  padding: 0 0 0 40px;
+}
+
+nav .nav-items li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0 15px;
+  color: #F5F5F5;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav .nav-items li:hover{
+  color: #dc3545;
+}
+
+/* New list btn */
+.btn{
+  display: block;
+  cursor: pointer;
+  margin: 50px auto;
+}
+
+.btn a{
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Quotes */
+.wrapper{
+  width: 605px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0px 15px 20px 8px rgba(0,0,0,0.1);
+  margin: 100px auto 0 auto;
+}
+
+.wrapper header{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper .content{
+  margin: 15px 0;
+}
+
+.content .quote-area{
+  display: flex;
+  justify-content: center;
+}
+
+.quote-area .quotes{
+  font-size: 10px;
+}
+
+.quote-area .fa-quote-right{
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote-area .quote{
+  font-size: 20px;
+  text-align: center;
+  /* prevent overflow */
+  word-wrap: break-word;
+}
+
+.content .author{
+  font-size: 15px;
+  margin-top: 15px;
+  justify-content: flex-end;
+  float: right;
+}
+
+#newQuote{
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 30px;
+  background: #5B5B5B;
+}
+
+
+
+/* browsers */
+.browsers{
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 15px 20px;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  width: 250px;
+  margin: 100px auto 0 auto;
+}
+
+.browsers h2{
+  font-size: 20px;
+}
+
+.browsers .logos{
+  margin-left: 10px;
+}
+
+.logos img{
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  margin: 0 7px;
+  transition: opacity 0.3s;
+}
+
+
+
+
+
+/* list page */
+form {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-input, .todo-button{
+  padding: 10px 10px 10px 15px;
+  font-size: 30px;
+  border: none;
+  background: white;
+}
+
+.todo-button{
+  color: #121212;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  margin-left: 0.5rem;
+}
+
+.todo-button:hover {
+  color: white;
+  background: #121212;
+}
+
+.fa-plus-circle {
+  margin-left: -5px;
+}
+
+.filter-todo{
+  outline: none;
+  border: none;
+  color: #121212;
+  cursor: pointer;
+  padding: 22px;
+}
+
+.select{
+  margin: 8px;
+}
+
+.todo-container {
+  width: 40%;
+  margin: auto;
+}
+
+.todo-list {
+  list-style: none;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.todo {
+  margin: 10px;
+  background: white;
+  color: black;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.todo-item {
+  padding: 10px;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn, 
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.complete-btn {
+  background: #121212;;
+}
+
+.trash-btn {
+  background: rgb(171, 171, 171);
+}
+
+.fa-trash, 
+.fa-check-circle {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.slide {
+  transform: translateX(10rem);
+  opacity: 0;
+}
