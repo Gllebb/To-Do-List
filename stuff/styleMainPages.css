@@ -28,6 +28,11 @@ nav{
   text-decoration: none;
 }
 
+nav .nav-items li a{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
 nav .nav-items{
   margin-left: auto;
   display: flex;
@@ -45,7 +50,7 @@ nav .nav-items li{
   cursor: pointer;
 }
 
-nav .nav-items li:hover{
+nav .nav-items li a:hover, nav .logo a:hover{
   color: #dc3545;
 }
 
@@ -154,7 +159,33 @@ nav .nav-items li:hover{
   transition: opacity 0.3s;
 }
 
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #5B5B5B;
+  color: white;
+  text-align: center;
+}
 
+.footer-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-items li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer-items li a{
+  text-decoration: none;
+}
 
 
 
