@@ -184,8 +184,3 @@ $(document).ready(function() {
   
     getLocalTodos();
 });
-
-const sound = new Audio("completed.mp3");
-$(".create").click(function() {
-  sound.play();
-});
