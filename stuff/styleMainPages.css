@@ -6,6 +6,7 @@ body{
   outline: none;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  height: 100vh;
 }
 
 /* Nav bar */
@@ -140,7 +141,7 @@ nav .nav-items li a:hover, nav .logo a:hover{
   justify-content: center;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
   width: 250px;
-  margin: 100px auto 0 auto;
+  margin: 80px auto 0 auto;
 }
 
 .browsers h2{
@@ -191,105 +192,101 @@ nav .nav-items li a:hover, nav .logo a:hover{
 
 /* list page */
 form {
-  min-height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.todo-input, .todo-button{
+.todo-input {
   padding: 10px 10px 10px 15px;
-  font-size: 30px;
+  font-size: 20px;
   border: none;
   background: white;
-}
-
-.todo-button{
-  color: #121212;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3 ease;
-  margin-left: 0.5rem;
-}
-
-.todo-button:hover {
-  color: white;
-  background: #121212;
-}
-
-.fa-plus-circle {
-  margin-left: -5px;
-}
-
-.filter-todo{
-  outline: none;
-  border: none;
-  color: #121212;
-  cursor: pointer;
-  padding: 22px;
-}
-
-.select{
-  margin: 8px;
 }
 
 .todo-container {
   width: 40%;
   margin: auto;
+  max-height: 450px;
 }
 
 .todo-list {
   list-style: none;
-  max-height: 450px;
   overflow-y: auto;
 }
 
 .todo {
-  margin: 10px;
+  margin: 10px auto;
   background: white;
   color: black;
   font-size: 22px;
   display: flex;
+  justify-content: center;
   align-items: center;
   transition: 0.3s;
+  max-height: 60px;
+  overflow: hidden;
 }
-
-.todo-item {
-  padding: 10px;
-}
-
-.todo li {
-  flex: 1;
-}
-
-.trash-btn, 
+ 
 .complete-btn {
-  color: white;
+  color: #000;
+  background-color: #EEE3CB;
   border: none;
   padding: 15px;
   cursor: pointer;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+
+.fa-check {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.text{
+  flex-grow: 1;
+  padding: 10px 0 10px 10px;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.complete-btn:hover {
+  background-color: #F6FFA6;
+}
+
+
+/* profile page */
+.profile-div{
+  background-color: #fff;
+  margin: 80px auto 0px auto;
+  width: 40%;
+  box-shadow: 0px 15px 20px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.profile-div h1{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-div p{
   font-size: 20px;
 }
 
-.complete-btn {
-  background: #121212;;
+.profile-div #last-p{
+  margin-bottom: 0px;
 }
 
-.trash-btn {
-  background: rgb(171, 171, 171);
+.profile-div .btn-primary{
+  margin: 20px 0;
 }
 
-.fa-trash, 
-.fa-check-circle {
-  pointer-events: none;
-}
-
-.completed {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-
-.slide {
-  transform: translateX(10rem);
-  opacity: 0;
+.profile-div input{
+  margin-bottom: 15px;
 }
