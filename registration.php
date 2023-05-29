@@ -18,7 +18,6 @@
 <body>
     <div class="container">
         <?php
-
         if(isset($_POST["submit"])){
             $fullName = $_POST["fullname"];
             $email = $_POST["email"];
@@ -35,7 +34,7 @@
                 array_push($errors, "Email is not valid");
             }
             if(strlen($password) < 8){
-                array_push($errors, "Psddword must be at least 8 characters long");
+                array_push($errors, "Password must be at least 8 characters long");
             }
             if($password !== $passwordRepeat){
                 array_push($errors, "Passwords does not match");
@@ -85,7 +84,7 @@
                 <input type="submit" class="btn btn-primary" value="Register" name="submit">
             </div>
         </form>
-        <p>Already registred? <a href="login.php">Login there!</a></p>
+        <p>Already registred? <a href="login.php">Login here!</a></p>
     </div>
 </body>
 </html>
